@@ -64,6 +64,7 @@ services:
       - "15432:5432"
     environment:
       POSTGRES_USERNAME: admin
+      POSTGRES_USER: admin
       POSTGRES_PASSWORD: admin
     networks:
       - spark_network
@@ -286,8 +287,6 @@ services:
           condition: service_completed_successfully
       networks:
         - spark_network
-
-
 
 
 networks:
